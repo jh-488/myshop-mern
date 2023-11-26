@@ -39,7 +39,7 @@
 .item__count i {
     background-color: var(--primary-blue);
     color: var(--primary-white);
-    padding: 5px;
+    padding: 2px;
 }
 
 .item__count p {
@@ -84,6 +84,11 @@
 }
 
 @media screen and (max-width: 500px) {
+    .cartitem {
+        display: flex;
+        flex-direction: column;
+    }
+
     .item__name {
         font-size: .6rem;
     }
@@ -91,9 +96,5 @@
     .item__count,
     .item__delete {
         padding: 5px 8px;
-    }
-
-    .item__price {
-        font-size: .6rem;
     }
 }

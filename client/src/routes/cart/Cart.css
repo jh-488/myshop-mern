@@ -68,15 +68,10 @@
     font-weight: 600;
 }
 
-@media screen and (max-width: 1320px) {
-    .cart {
-        max-width: 70%;
-    }
-}
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1200px) {
     .cart {
-        max-width: 60%;
+        max-width: 90%;
         flex-direction: column;
     }
 
