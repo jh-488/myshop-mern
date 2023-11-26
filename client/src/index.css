@@ -15,4 +15,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: var(--primary-white);
+    position: relative;
+    min-height: 100vh;
 }
