@@ -1,0 +1,120 @@
+.product {
+    max-width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__leftcolumn {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.left__image {
+}
+
+.left__image img {
+    width: 100%;
+    height: 500px;
+    border: 1px solid var(--primary-blue);
+    border-radius: 5px;
+    box-shadow: 0 -2px 20px rgba(66, 72, 116, 0.4);
+}
+
+.left__content {
+    margin-top: 20px;
+    background-color: var(--primary-purple);
+    border: 1px solid var(--primary-blue);
+    box-shadow: 0 -2px 20px rgba(66, 72, 116, 0.4);
+    height: fit-content;
+    font-size: .9rem;
+}
+
+.left__name {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.left__content > p,
+.right__content > p {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(66, 72, 116, 0.4);
+}
+
+.left__content > p:last-child,
+.right__content > p:last-child {
+    border: none;
+}
+
+.right__content {
+    width: 400px;
+    background-color: var(--primary-purple);
+    border: 1px solid var(--primary-blue);
+    box-shadow: 0 -2px 20px rgba(66, 72, 116, 0.4);
+}
+
+.right__content p {
+    padding: 1.2rem;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.right__content p button {
+    grid-column: 1/ span 2;
+    padding: 10px 16px;
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid var(--primary-blue);
+    cursor: pointer;
+}
+
+.right__content button:hover {
+    opacity: .8;
+}
+
+.right__content input {
+    width: 100%;
+    padding: 10px 16px;
+}
+
+.right__content .error__message {
+    color: red;
+    display: flex;
+}
+
+@media screen and (max-width: 1250px) {
+    .product {
+        flex-direction: column;
+    }
+
+    .product__leftcolumn {
+        width: 100%;
+    }
+
+    .product__rightcolumn {
+        padding: 1rem;
+    }
+
+    .right__content {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .product {
+        max-width: 90%;
+    }
+
+    .product__leftcolumn {
+        width: 100%;
+    }
+
+    .product__leftcolumn img {
+        height: 350px;
+    }
+}

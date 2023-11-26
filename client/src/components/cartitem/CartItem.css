@@ -1,0 +1,99 @@
+.cartitem {
+    padding: 1rem;
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 1fr 1fr;
+    gap: 8px;
+    background-color: var(--primary-purple);
+    border: 1px solid var(--primary-blue);
+    box-shadow: 0 -2px 20px rgba(66, 72, 116, 0.4);
+    border-radius: 5px;
+    place-items: center;
+}
+
+.cartitem img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.item__name {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.item__name:hover {
+    opacity: .8;
+}
+
+.item__count {
+    display: flex;
+    align-items: center;
+}
+
+.item__count button {
+    cursor: pointer;
+}
+
+.item__count i {
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+    padding: 5px;
+}
+
+.item__count p {
+    font-size: 1.5rem;
+    padding: 0 5px;
+}
+
+.item__price {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.item__delete {
+    padding: 10px 17px;
+    color: var(--primary-white);
+    background-color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.item__delete:hover,
+.item__delete:focus,
+.item__delete:active {
+    opacity: .8;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 700px) {
+    .item__name {
+        font-size: .8rem;
+    }
+
+    .item__count,
+    .item__delete {
+        padding: 8px 13px;
+    }
+
+    .item__price {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .item__name {
+        font-size: .6rem;
+    }
+
+    .item__count,
+    .item__delete {
+        padding: 5px 8px;
+    }
+
+    .item__price {
+        font-size: .6rem;
+    }
+}

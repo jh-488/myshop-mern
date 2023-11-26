@@ -1,0 +1,18 @@
+:root {
+    --primary-blue: #424874;
+    --primary-purple: #DCD6F7;
+    --primary-white: #F4F4F4;
+    --primary-gray: #CACFD6;
+    --primary-black: #171717;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--primary-white);
+}

@@ -1,0 +1,11 @@
+footer .copyright {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+    box-shadow: 0 -2px 20px rgba(66, 72, 116, 0.4);
+}
+
+footer .copyright span i {
+    text-decoration: underline;
+}
